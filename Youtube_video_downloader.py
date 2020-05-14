@@ -1,7 +1,8 @@
-from pytube import Youtube
+from pytube import YouTube
 
 Youtube_link = input("Enter a Youtube Video Link That You Want To Download: ")
-Youtube_Connection = Youtube(Youtube_link)
+Youtube_Connection = YouTube(Youtube_link)
 
-Video_versions = Youtube_Connection.streams.all()
-print(Video_versions)
+link_title = Youtube_Connection.title
+print(link_title)
+
