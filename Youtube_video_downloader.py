@@ -37,7 +37,14 @@ if(Download_format == "A" or Download_format == "a"):
   
 print("\n")
 
-print(downloading_File)    
+print(downloading_File)  
 
+download_request = input("DO YOU WANT TO DOWNLOAD THIS FILE (Y / N): " "\n")
 
+if(download_request == 'y' or download_request == 'Y'):
+    print("Your Video or Audio is Being Downloaded" "\n")
+    downloading_File.download() 
+    print("The File has been downloaded")
+else:
+    print("The Program will End.") 
 
